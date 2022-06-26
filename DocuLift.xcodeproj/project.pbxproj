@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C01DA43E28691AD300E5957F /* DocuLiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA43D28691AD300E5957F /* DocuLiftApp.swift */; };
-		C01DA44028691AD300E5957F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA43F28691AD300E5957F /* ContentView.swift */; };
 		C01DA44228691AD400E5957F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01DA44128691AD400E5957F /* Assets.xcassets */; };
-		C01DA44528691AD400E5957F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01DA44428691AD400E5957F /* Preview Assets.xcassets */; };
-		C01DA44728691AD400E5957F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA44628691AD400E5957F /* Persistence.swift */; };
 		C01DA44A28691AD400E5957F /* DocuLift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C01DA44828691AD400E5957F /* DocuLift.xcdatamodeld */; };
 		C01DA45428691AD400E5957F /* DocuLiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA45328691AD400E5957F /* DocuLiftTests.swift */; };
 		C01DA45E28691AD400E5957F /* DocuLiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA45D28691AD400E5957F /* DocuLiftUITests.swift */; };
@@ -38,10 +35,7 @@
 /* Begin PBXFileReference section */
 		C01DA43A28691AD300E5957F /* DocuLift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocuLift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01DA43D28691AD300E5957F /* DocuLiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocuLiftApp.swift; sourceTree = "<group>"; };
-		C01DA43F28691AD300E5957F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C01DA44128691AD400E5957F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C01DA44428691AD400E5957F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C01DA44628691AD400E5957F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C01DA44928691AD400E5957F /* DocuLift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DocuLift.xcdatamodel; sourceTree = "<group>"; };
 		C01DA44F28691AD400E5957F /* DocuLiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocuLiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01DA45328691AD400E5957F /* DocuLiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocuLiftTests.swift; sourceTree = "<group>"; };
@@ -99,21 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				C01DA43D28691AD300E5957F /* DocuLiftApp.swift */,
-				C01DA43F28691AD300E5957F /* ContentView.swift */,
 				C01DA44128691AD400E5957F /* Assets.xcassets */,
-				C01DA44628691AD400E5957F /* Persistence.swift */,
 				C01DA44828691AD400E5957F /* DocuLift.xcdatamodeld */,
-				C01DA44328691AD400E5957F /* Preview Content */,
 			);
 			path = DocuLift;
-			sourceTree = "<group>";
-		};
-		C01DA44328691AD400E5957F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C01DA44428691AD400E5957F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C01DA45228691AD400E5957F /* DocuLiftTests */ = {
@@ -237,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C01DA44528691AD400E5957F /* Preview Assets.xcassets in Resources */,
 				C01DA44228691AD400E5957F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C01DA44728691AD400E5957F /* Persistence.swift in Sources */,
-				C01DA44028691AD300E5957F /* ContentView.swift in Sources */,
 				C01DA43E28691AD300E5957F /* DocuLiftApp.swift in Sources */,
 				C01DA44A28691AD400E5957F /* DocuLift.xcdatamodeld in Sources */,
 			);
