@@ -13,6 +13,7 @@
 		C01DA45428691AD400E5957F /* DocuLiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA45328691AD400E5957F /* DocuLiftTests.swift */; };
 		C01DA45E28691AD400E5957F /* DocuLiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA45D28691AD400E5957F /* DocuLiftUITests.swift */; };
 		C01DA46028691AD400E5957F /* DocuLiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA45F28691AD400E5957F /* DocuLiftUITestsLaunchTests.swift */; };
+		C01DA46D2869358300E5957F /* PreviewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA46C2869358300E5957F /* PreviewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		C01DA45928691AD400E5957F /* DocuLiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocuLiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01DA45D28691AD400E5957F /* DocuLiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocuLiftUITests.swift; sourceTree = "<group>"; };
 		C01DA45F28691AD400E5957F /* DocuLiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocuLiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C01DA46C2869358300E5957F /* PreviewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				C01DA43D28691AD300E5957F /* DocuLiftApp.swift */,
 				C01DA44128691AD400E5957F /* Assets.xcassets */,
 				C01DA44828691AD400E5957F /* DocuLift.xcdatamodeld */,
+				C01DA46C2869358300E5957F /* PreviewBuilder.swift */,
 			);
 			path = DocuLift;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01DA46D2869358300E5957F /* PreviewBuilder.swift in Sources */,
 				C01DA43E28691AD300E5957F /* DocuLiftApp.swift in Sources */,
 				C01DA44A28691AD400E5957F /* DocuLift.xcdatamodeld in Sources */,
 			);
