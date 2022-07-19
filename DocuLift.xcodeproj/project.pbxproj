@@ -14,6 +14,10 @@
 		C01DA45E28691AD400E5957F /* DocuLiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA45D28691AD400E5957F /* DocuLiftUITests.swift */; };
 		C01DA46028691AD400E5957F /* DocuLiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA45F28691AD400E5957F /* DocuLiftUITestsLaunchTests.swift */; };
 		C01DA46D2869358300E5957F /* PreviewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DA46C2869358300E5957F /* PreviewBuilder.swift */; };
+		C0A865FC287E792C003244D0 /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A865FB287E792C003244D0 /* TabContainerView.swift */; };
+		C0A865FF28807D46003244D0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A865FE28807D46003244D0 /* TabBar.swift */; };
+		C0CE812728822DC000FA5EB8 /* TabContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812628822DC000FA5EB8 /* TabContainerViewModel.swift */; };
+		C0CE81292882301300FA5EB8 /* TabBarItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE81282882301300FA5EB8 /* TabBarItemData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		C01DA45D28691AD400E5957F /* DocuLiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocuLiftUITests.swift; sourceTree = "<group>"; };
 		C01DA45F28691AD400E5957F /* DocuLiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocuLiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C01DA46C2869358300E5957F /* PreviewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewBuilder.swift; sourceTree = "<group>"; };
+		C0A865FB287E792C003244D0 /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
+		C0A865FE28807D46003244D0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		C0CE812628822DC000FA5EB8 /* TabContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerViewModel.swift; sourceTree = "<group>"; };
+		C0CE81282882301300FA5EB8 /* TabBarItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		C01DA43C28691AD300E5957F /* DocuLift */ = {
 			isa = PBXGroup;
 			children = (
+				C0A866002881C784003244D0 /* Models */,
+				C0A865FA287E7918003244D0 /* Components */,
+				C0A865F9287E775F003244D0 /* Views */,
 				C01DA43D28691AD300E5957F /* DocuLiftApp.swift */,
 				C01DA44128691AD400E5957F /* Assets.xcassets */,
 				C01DA44828691AD400E5957F /* DocuLift.xcdatamodeld */,
@@ -117,6 +128,39 @@
 				C01DA45F28691AD400E5957F /* DocuLiftUITestsLaunchTests.swift */,
 			);
 			path = DocuLiftUITests;
+			sourceTree = "<group>";
+		};
+		C0A865F9287E775F003244D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0A865FD287FD727003244D0 /* TabContainerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C0A865FA287E7918003244D0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C0A865FE28807D46003244D0 /* TabBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C0A865FD287FD727003244D0 /* TabContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				C0A865FB287E792C003244D0 /* TabContainerView.swift */,
+				C0CE812628822DC000FA5EB8 /* TabContainerViewModel.swift */,
+			);
+			path = TabContainerView;
+			sourceTree = "<group>";
+		};
+		C0A866002881C784003244D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0CE81282882301300FA5EB8 /* TabBarItemData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +292,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CE812728822DC000FA5EB8 /* TabContainerViewModel.swift in Sources */,
 				C01DA46D2869358300E5957F /* PreviewBuilder.swift in Sources */,
 				C01DA43E28691AD300E5957F /* DocuLiftApp.swift in Sources */,
 				C01DA44A28691AD400E5957F /* DocuLift.xcdatamodeld in Sources */,
+				C0A865FC287E792C003244D0 /* TabContainerView.swift in Sources */,
+				C0A865FF28807D46003244D0 /* TabBar.swift in Sources */,
+				C0CE81292882301300FA5EB8 /* TabBarItemData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
