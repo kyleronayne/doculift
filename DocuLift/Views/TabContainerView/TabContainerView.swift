@@ -6,7 +6,7 @@ struct TabContainerView<ViewModel: TabContainerViewModel>: View {
   @ObservedObject var viewModel: ViewModel
   
   /// - Parameters:
-  ///   * viewModel:
+  ///   * viewModel: A `TabContainerViewModel`
   public init(viewModel: ViewModel) {
     self.viewModel = viewModel
   }

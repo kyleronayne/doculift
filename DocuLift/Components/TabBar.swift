@@ -18,6 +18,7 @@ struct TabBar: View {
     HStack(spacing: 0) {
       Spacer()
       ForEach(Array(self.tabBarItems.enumerated()), id: \.offset) { (tabBarItemIndex, tabBarItem) in
+        
         Button(action: { self.selectedTabIndex = tabBarItemIndex }) {
           VStack(spacing: 0) {
             Image(systemName: tabBarItemIndex == self.selectedTabIndex ? tabBarItem.icon + ".fill" : tabBarItem.icon)
@@ -28,6 +29,7 @@ struct TabBar: View {
         .buttonStyle(TabBarItemStyle())
         .foregroundColor(tabBarItemIndex == self.selectedTabIndex ? .white : .white.opacity(0.70)) // TODO: Use theme colors
         .frame(maxWidth: .infinity)
+        
       }
       Spacer()
     }
@@ -36,7 +38,7 @@ struct TabBar: View {
   }
 }
 
-/// This is the style responsible for the scale effect when a tab bar item is selected.
+/// This is the style responsible for the scale effect when a tab bar item is pressed.
 
 struct TabBarItemStyle: ButtonStyle {
   
