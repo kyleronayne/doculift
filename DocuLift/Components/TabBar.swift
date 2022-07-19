@@ -16,21 +16,22 @@ struct TabBar: View {
   
   var body: some View {
     HStack(spacing: 0) {
+      Spacer()
       ForEach(Array(self.tabBarItems.enumerated()), id: \.offset) { (tabBarItemIndex, tabBarItem) in
-        Spacer()
         Button(action: { self.selectedTabIndex = tabBarItemIndex }) {
           VStack(spacing: 0) {
             Image(systemName: tabBarItemIndex == self.selectedTabIndex ? tabBarItem.icon + ".fill" : tabBarItem.icon)
+              .frame(height: 20)
             Text(tabBarItem.label)
           }
         }
         .buttonStyle(TabBarItemStyle())
         .foregroundColor(tabBarItemIndex == self.selectedTabIndex ? .white : .white.opacity(0.70)) // TODO: Use theme colors
-        .frame(maxWidth: .infinity, maxHeight: 20)
-        Spacer()
+        .frame(maxWidth: .infinity)
       }
+      Spacer()
     }
-    .padding(.vertical)
+    .padding(.top, 4)
     .background(Color(red: 0.07, green: 0.07, blue: 0.08)) // TODO: Use theme color
   }
 }
@@ -43,7 +44,7 @@ struct TabBarItemStyle: ButtonStyle {
   ///   * configuration: The properties of a button
   func makeBody(configuration: Self.Configuration) -> some View {
     configuration.label
-      .scaleEffect(configuration.isPressed ? 0.85 : 1)
+      .scaleEffect(configuration.isPressed ? 0.95 : 1)
   }
 }
 
