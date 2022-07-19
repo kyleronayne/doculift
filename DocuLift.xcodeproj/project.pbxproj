@@ -18,6 +18,8 @@
 		C0A865FF28807D46003244D0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A865FE28807D46003244D0 /* TabBar.swift */; };
 		C0CE812728822DC000FA5EB8 /* TabContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812628822DC000FA5EB8 /* TabContainerViewModel.swift */; };
 		C0CE81292882301300FA5EB8 /* TabBarItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE81282882301300FA5EB8 /* TabBarItemData.swift */; };
+		C0CE812B2886354600FA5EB8 /* RoutinesTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812A2886354600FA5EB8 /* RoutinesTabViewModel.swift */; };
+		C0CE812E288635D000FA5EB8 /* RoutinesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		C0A865FE28807D46003244D0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C0CE812628822DC000FA5EB8 /* TabContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerViewModel.swift; sourceTree = "<group>"; };
 		C0CE81282882301300FA5EB8 /* TabBarItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemData.swift; sourceTree = "<group>"; };
+		C0CE812A2886354600FA5EB8 /* RoutinesTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTabViewModel.swift; sourceTree = "<group>"; };
+		C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 		C0A865F9287E775F003244D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0CE812C2886359400FA5EB8 /* RoutinesTab */,
 				C0A865FD287FD727003244D0 /* TabContainerView */,
 			);
 			path = Views;
@@ -161,6 +166,15 @@
 				C0CE81282882301300FA5EB8 /* TabBarItemData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C0CE812C2886359400FA5EB8 /* RoutinesTab */ = {
+			isa = PBXGroup;
+			children = (
+				C0CE812A2886354600FA5EB8 /* RoutinesTabViewModel.swift */,
+				C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */,
+			);
+			path = RoutinesTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CE812E288635D000FA5EB8 /* RoutinesTabView.swift in Sources */,
 				C0CE812728822DC000FA5EB8 /* TabContainerViewModel.swift in Sources */,
+				C0CE812B2886354600FA5EB8 /* RoutinesTabViewModel.swift in Sources */,
 				C01DA46D2869358300E5957F /* PreviewBuilder.swift in Sources */,
 				C01DA43E28691AD300E5957F /* DocuLiftApp.swift in Sources */,
 				C01DA44A28691AD400E5957F /* DocuLift.xcdatamodeld in Sources */,
