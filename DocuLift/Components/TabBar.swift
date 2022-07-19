@@ -8,7 +8,7 @@ struct TabBar: View {
   
   /// - Parameters:
   ///   * tabBarItems: An array of tab bar items to display
-  ///   * selectedTabIndex: An integer in the range [0,2] representing the selected tab
+  ///   * selectedTabIndex: An integer in the range [0,2] representing the selected tab index
   public init(tabBarItems: [TabBarItemData], selectedTabIndex: Binding<Int>) {
     self.tabBarItems = tabBarItems
     self._selectedTabIndex = selectedTabIndex
