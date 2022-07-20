@@ -30,7 +30,7 @@ struct TabContainerView<ViewModel: TabContainerViewModel>: View {
         TabBarItemData(label: "Routines", icon: "menucard"),
         TabBarItemData(label: "Settings", icon: "gearshape")
       ],
-      selectedTabIndex: self.$viewModel.selectedTabIndex
+      viewModel: self.viewModel
     )
   }
 }

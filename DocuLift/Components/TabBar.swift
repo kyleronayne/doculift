@@ -2,34 +2,32 @@ import SwiftUI
 
 /// This is the tab bar component which displays tab bar items and changes the selected tab index.
 
-struct TabBar: View {
+struct TabBar<ViewModel: TabContainerViewModel>: View {
   private let tabBarItems: [TabBarItemData]
-  @Binding private var selectedTabIndex: Int
+  private let viewModel: ViewModel
   
   /// - Parameters:
   ///   * tabBarItems: An array of tab bar items to display
-  ///   * selectedTabIndex: An integer in the range [0,2] representing the selected tab index
-  public init(tabBarItems: [TabBarItemData], selectedTabIndex: Binding<Int>) {
+  ///   * viewModel: A `TabContainerViewModel`
+  public init(tabBarItems: [TabBarItemData], viewModel: ViewModel) {
     self.tabBarItems = tabBarItems
-    self._selectedTabIndex = selectedTabIndex
+    self.viewModel = viewModel
   }
   
   var body: some View {
     HStack(spacing: 0) {
       Spacer()
       ForEach(Array(self.tabBarItems.enumerated()), id: \.offset) { (tabBarItemIndex, tabBarItem) in
-        
-        Button(action: { self.selectedTabIndex = tabBarItemIndex }) {
+        Button(action: { self.viewModel.setSelectedTabIndex(index: tabBarItemIndex) }) {
           VStack(spacing: 0) {
-            Image(systemName: tabBarItemIndex == self.selectedTabIndex ? tabBarItem.icon + ".fill" : tabBarItem.icon)
+            Image(systemName: tabBarItemIndex == self.viewModel.selectedTabIndex ? tabBarItem.icon + ".fill" : tabBarItem.icon)
               .frame(height: 20)
             Text(tabBarItem.label)
           }
         }
         .buttonStyle(TabBarItemStyle())
-        .foregroundColor(tabBarItemIndex == self.selectedTabIndex ? .white : .white.opacity(0.70)) // TODO: Use theme colors
+        .foregroundColor(tabBarItemIndex == self.viewModel.selectedTabIndex ? .white : .white.opacity(0.70)) // TODO: Use theme colors
         .frame(maxWidth: .infinity)
-        
       }
       Spacer()
     }
@@ -58,7 +56,7 @@ struct TabBar_Previews: PreviewProvider {
             TabBarItemData(label: "Routines", icon: "menucard"),
             TabBarItemData(label: "Settings", icon: "gearshape")
           ],
-          selectedTabIndex: .constant(1)
+          viewModel: TabContainerViewModel()
         )
     }
 }
