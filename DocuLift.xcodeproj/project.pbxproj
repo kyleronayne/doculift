@@ -21,6 +21,7 @@
 		C0CE812B2886354600FA5EB8 /* RoutinesTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812A2886354600FA5EB8 /* RoutinesTabViewModel.swift */; };
 		C0CE812E288635D000FA5EB8 /* RoutinesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */; };
 		C0CE81302886393800FA5EB8 /* RoutineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812F2886393800FA5EB8 /* RoutineCard.swift */; };
+		C0CE81332887937D00FA5EB8 /* TabBarItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE81322887937D00FA5EB8 /* TabBarItemStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C0CE812A2886354600FA5EB8 /* RoutinesTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTabViewModel.swift; sourceTree = "<group>"; };
 		C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTabView.swift; sourceTree = "<group>"; };
 		C0CE812F2886393800FA5EB8 /* RoutineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCard.swift; sourceTree = "<group>"; };
+		C0CE81322887937D00FA5EB8 /* TabBarItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				C0A866002881C784003244D0 /* Models */,
-				C0A865FA287E7918003244D0 /* Components */,
 				C0A865F9287E775F003244D0 /* Views */,
+				C0A865FA287E7918003244D0 /* Components */,
+				C0CE81312887931C00FA5EB8 /* ViewModifiers */,
 				C01DA43D28691AD300E5957F /* DocuLiftApp.swift */,
 				C01DA44128691AD400E5957F /* Assets.xcassets */,
 				C01DA44828691AD400E5957F /* DocuLift.xcdatamodeld */,
@@ -178,6 +181,14 @@
 				C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */,
 			);
 			path = RoutinesTab;
+			sourceTree = "<group>";
+		};
+		C0CE81312887931C00FA5EB8 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C0CE81322887937D00FA5EB8 /* TabBarItemStyle.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +325,7 @@
 				C0CE812728822DC000FA5EB8 /* TabContainerViewModel.swift in Sources */,
 				C0CE812B2886354600FA5EB8 /* RoutinesTabViewModel.swift in Sources */,
 				C01DA46D2869358300E5957F /* PreviewBuilder.swift in Sources */,
+				C0CE81332887937D00FA5EB8 /* TabBarItemStyle.swift in Sources */,
 				C01DA43E28691AD300E5957F /* DocuLiftApp.swift in Sources */,
 				C01DA44A28691AD400E5957F /* DocuLift.xcdatamodeld in Sources */,
 				C0A865FC287E792C003244D0 /* TabContainerView.swift in Sources */,
