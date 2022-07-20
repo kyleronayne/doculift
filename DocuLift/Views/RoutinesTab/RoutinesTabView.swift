@@ -1,8 +1,12 @@
 import SwiftUI
 
+/// This view provides an entry-point for creating and accessing routines.
+
 struct RoutinesTabView<ViewModel: RoutinesTabViewModel>: View {
   @ObservedObject private var viewModel: ViewModel
   
+  /// - Parameters:
+  ///   * viewModel: A `RoutinesTabViewModel`
   public init(viewModel: ViewModel) {
     self.viewModel = viewModel
   }

@@ -20,6 +20,7 @@
 		C0CE81292882301300FA5EB8 /* TabBarItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE81282882301300FA5EB8 /* TabBarItemData.swift */; };
 		C0CE812B2886354600FA5EB8 /* RoutinesTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812A2886354600FA5EB8 /* RoutinesTabViewModel.swift */; };
 		C0CE812E288635D000FA5EB8 /* RoutinesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */; };
+		C0CE81302886393800FA5EB8 /* RoutineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812F2886393800FA5EB8 /* RoutineCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C0CE81282882301300FA5EB8 /* TabBarItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemData.swift; sourceTree = "<group>"; };
 		C0CE812A2886354600FA5EB8 /* RoutinesTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTabViewModel.swift; sourceTree = "<group>"; };
 		C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTabView.swift; sourceTree = "<group>"; };
+		C0CE812F2886393800FA5EB8 /* RoutineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A865FE28807D46003244D0 /* TabBar.swift */,
+				C0CE812F2886393800FA5EB8 /* RoutineCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CE81302886393800FA5EB8 /* RoutineCard.swift in Sources */,
 				C0CE812E288635D000FA5EB8 /* RoutinesTabView.swift in Sources */,
 				C0CE812728822DC000FA5EB8 /* TabContainerViewModel.swift in Sources */,
 				C0CE812B2886354600FA5EB8 /* RoutinesTabViewModel.swift in Sources */,
