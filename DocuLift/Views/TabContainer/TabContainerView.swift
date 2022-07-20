@@ -12,26 +12,30 @@ struct TabContainerView<ViewModel: TabContainerViewModel>: View {
   }
   
   var body: some View {
-    TabView(selection: self.$viewModel.selectedTabIndex) {
-      Text("Stats")
-        .tag(0)
-      Text("Routines")
-        .tag(1)
-      Text("Settings")
-        .tag(2)
+    ZStack {
+      Color.gray // TODO: Use theme color
+        .ignoresSafeArea(edges: .top)
+      VStack(spacing: 0) {
+        Spacer()
+        TabView(selection: self.$viewModel.selectedTabIndex) {
+          // Hide the default tab bar by omitting each .tabBarItem
+          Text("Stats")
+            .tag(0)
+          Text("Routines")
+            .tag(1)
+          Text("Settings")
+            .tag(2)
+        }
+        TabBar(
+          tabBarItems: [
+            TabBarItemData(label: "Stats", icon: "chart.bar"),
+            TabBarItemData(label: "Routines", icon: "menucard"),
+            TabBarItemData(label: "Settings", icon: "gearshape")
+          ],
+          viewModel: self.viewModel
+        )
+      }
     }
-    .onAppear {
-      UITabBar.appearance().isHidden = true
-    }
-    
-    TabBar(
-      tabBarItems: [
-        TabBarItemData(label: "Stats", icon: "chart.bar"),
-        TabBarItemData(label: "Routines", icon: "menucard"),
-        TabBarItemData(label: "Settings", icon: "gearshape")
-      ],
-      viewModel: self.viewModel
-    )
   }
 }
 

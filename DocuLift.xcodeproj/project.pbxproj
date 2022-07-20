@@ -22,6 +22,7 @@
 		C0CE812E288635D000FA5EB8 /* RoutinesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */; };
 		C0CE81302886393800FA5EB8 /* RoutineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE812F2886393800FA5EB8 /* RoutineCard.swift */; };
 		C0CE81332887937D00FA5EB8 /* TabBarItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE81322887937D00FA5EB8 /* TabBarItemStyle.swift */; };
+		C0CE8135288799AE00FA5EB8 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE8134288799AE00FA5EB8 /* PrimaryButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		C0CE812D288635D000FA5EB8 /* RoutinesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTabView.swift; sourceTree = "<group>"; };
 		C0CE812F2886393800FA5EB8 /* RoutineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCard.swift; sourceTree = "<group>"; };
 		C0CE81322887937D00FA5EB8 /* TabBarItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemStyle.swift; sourceTree = "<group>"; };
+		C0CE8134288799AE00FA5EB8 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				C0CE81322887937D00FA5EB8 /* TabBarItemStyle.swift */,
+				C0CE8134288799AE00FA5EB8 /* PrimaryButtonStyle.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CE8135288799AE00FA5EB8 /* PrimaryButtonStyle.swift in Sources */,
 				C0CE81302886393800FA5EB8 /* RoutineCard.swift in Sources */,
 				C0CE812E288635D000FA5EB8 /* RoutinesTabView.swift in Sources */,
 				C0CE812728822DC000FA5EB8 /* TabContainerViewModel.swift in Sources */,

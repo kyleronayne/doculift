@@ -4,27 +4,35 @@ struct RoutineCard: View {
   var body: some View {
     VStack(spacing: 0) {
       Text("Push Day")
+        .foregroundColor(Color(red: 0.49, green: 0.88, blue: 0.06)) // TODO: Use custom font with theme color
         .padding(.bottom, 8)
-      HStack(spacing: 0) {
-        VStack(alignment: .leading, spacing: 4) {
-          Text("Target Muscles")
-          Text("Last Performed")
+      VStack(spacing: 4) {
+        VStack {
+          Text("Target Muscles:")
+          Text("Chest, Triceps, & Shoulders")
+            .foregroundColor(Color(red: 0.59, green: 0.62, blue: 0.65)) // TODO: Use custom font with theme color
         }
-        Spacer()
+        VStack {
+          Text("Last Performed:")
+          Text("Yesterday")
+            .foregroundColor(Color(red: 0.59, green: 0.62, blue: 0.65)) // TODO: Use custom font with theme color
+        }
       }
+      .foregroundColor(.white)
       .padding(.bottom, 20)
-      Button("Start Lift", action: {}) // TODO: Use custom primary button component
+      Button("Start New Lift", action: {})
+        .buttonStyle(PrimaryButtonStyle())
     }
-    .padding(.all, 4)
+    .padding(.all, 8)
+    .frame(maxWidth: .infinity)
     .background(
       ZStack {
         RoundedRectangle(cornerRadius: 16, style: .circular)
-          .fill(.clear) // TODO: Use theme color
+          .fill(Color(red: 0.10, green: 0.13, blue: 0.15)) // TODO: Use theme color
         RoundedRectangle(cornerRadius: 16)
-          .stroke(.red, lineWidth: 2) // TODO: Use theme color
+          .stroke(Color(red: 0.59, green: 0.62, blue: 0.65), lineWidth: 2) // TODO: Use theme color
       }
     )
-    .frame(maxWidth: .infinity)
   }
 }
 

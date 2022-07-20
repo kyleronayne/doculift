@@ -26,13 +26,13 @@ struct TabBar<ViewModel: TabContainerViewModel>: View {
           }
         }
         .buttonStyle(TabBarItemStyle())
-        .foregroundColor(tabBarItemIndex == self.viewModel.selectedTabIndex ? .white : .white.opacity(0.70)) // TODO: Use theme colors
+        .foregroundColor(tabBarItemIndex == self.viewModel.selectedTabIndex ? Color(red: 0.78, green: 0.94, blue: 0.39) : .white.opacity(0.30)) // TODO: Use theme colors
         .frame(maxWidth: .infinity)
       }
       Spacer()
     }
     .padding(.top, 4)
-    .background(Color(red: 0.07, green: 0.07, blue: 0.08)) // TODO: Use theme color
+    .background(Color(red: 0.11, green: 0.13, blue: 0.13)) // TODO: Use theme color
   }
 }
 
